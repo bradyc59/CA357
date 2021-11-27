@@ -89,7 +89,7 @@ background-color: white;
 #navbar ul{
   align-items: center;
   text-align:center;
-  margin-left: 31%;
+  margin-left: 33%;
   }
  
 #icons{
@@ -217,7 +217,7 @@ margin: 0 1em;
   padding-bottom: 25px;
 }
 
-.item1border {
+.item1{
 border:3px solid;
 width: 60%;
 display: block;
@@ -286,6 +286,20 @@ font-style: italic;
 margin-bottom: 3em;
 }
 
+#cost {
+font-family: sans-serif;
+color: #2F4F4F;
+margin-left: 7%;
+margin-bottom: 2em;
+}
+
+#buyorsell {
+font-family: serif;
+color: #FF0000;
+margin-left:7%;
+margin-bottom: 3em;
+}
+
 #caption {
 font-family: Arial;
 color: #000000;
@@ -296,4 +310,10 @@ margin-right: 7%;
 
 #backgroundcolor {
 background-color: #DCDCDC;
+}
+
+#videos {
+margin-left: 7%;
+width: 750px;
+height: 500px;
 }
