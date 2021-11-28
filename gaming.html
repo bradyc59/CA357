@@ -1,106 +1,241 @@
 <!DOCTYPE html>
-<html>
-    <link rel="stylesheet" href="index.css">
-    <head><title>Facebook</title></head>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Facebook Clone</title>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="index2.css" />
+    </head>
     <body>
-    <div id="backgroundcolor">
-        <div class="container">
-          <nav id="navbar">
-		  <img id="logo" src="images/Facebook-logo.png">
-            <ul>
-              <div id="icons"><a href="index.html"><img id="home" src="images/home.png"></a></div>
-              <div id="icons"><a href="videos.html"><img id="watch" src="images/watch.png"></a></div>
-              <div id="icons"><a href="marketplace.html"><img id="marketplace" src="images/marketplace.png"></a></div>
-              <div id="icons"><a href="group.html"><img id="groups" src="images/groups.png"></a></div>
-              <div id="icons"><a href=""><img id="gaming" src="images/gaming.png"></a></div>
-              <input type="text" placeholder="Search..">
-            </ul>
-          </nav>
+        <div class="header">
+            <div class="header_left">
+                <img 
+                    src="https://image.similarpng.com/very-thumbnail/2020/04/Popular-facebook-Logo-png.png" 
+                    alt="Facebook logo"
+                />
+                <div class="header_input">
+                    <span class="material-icons"> search </span>
+                    <input type="text" placeholder="Search Facebook" />
+                </div>
+            </div>
+
+            <div class="header_middle">
+                <div class="header_option active">
+                    <span class="material-icons"> home </span>
+                </div>
+                <div class="header_option">
+                    <span class="material-icons"> videocam </span>
+                </div>
+                <div class="header_option">
+                    <span class="material-icons"> storefront </span>
+                </div>
+                <div class="header_option">
+                    <span class="material-icons"> groups </span>
+                </div>
+                <div class="header_option">
+                    <span class="material-icons"> sports_esports </span>
+                </div>
+            </div>
+
+            <div class="header_right">
+                <div class="header_info">
+                    <img 
+                        class="user_avatar"
+                        src="https://w7.pngwing.com/pngs/340/946/png-transparent-avatar-user-computer-icons-software-developer-avatar-child-face-heroes-thumbnail.png" 
+                        alt="avatar"
+                    />
+                    <h4>John Doe</h4> 
+                </div>
+                <span class="material-icons"> add </span>
+                <span class="material-icons"> forum </span>
+                <span class="material-icons"> notifications_active </span>
+                <span class="material-icons"> expand_more </span>
+            </div>
         </div>
-      <div id="mySidenav" class="sidenav">
-        <a href="#">About</a>
-        <a href="#">Services</a>
-        <a href="#">Clients</a>
-        <a href="#">Contact</a>
-        <a href="saved.html">Saved</a>
-        <a href="#">Pages</a>
-        <a href="jobs.html">Jobs</a>
-      </div>
 
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-      <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+        <div class="main_body">
+            <!--sidebar starts-->
+            <div class="sidebar">
+                <div class="sidebarRow">
+                    <span class="material-icons"> local_hospital </span>
+                    <h4>Covid 19 information</h4>
+                </div>
+                <div class="sidebarRow">
+                    <span class="material-icons"> event </span>
+                    <h4>Events</h4>
+                </div>
+                <div class="sidebarRow">
+                    <span class="material-icons"> saved_search </span>
+                    <h4>Saved</h4>
+                </div>
+                <div class="sidebarRow">
+                    <span class="material-icons"> work </span>
+                    <h4>Jobs</h4>
+                </div>
+            </div>
+            <!--sidebar ends-->
 
+            <div class="feed">
+                <!--make post starts-->
+                <div class="createPost">
+                    <div class="createPost_top">
+                        <img 
+                        class="user_avatar"
+                        src="https://w7.pngwing.com/pngs/340/946/png-transparent-avatar-user-computer-icons-software-developer-avatar-child-face-heroes-thumbnail.png" 
+                        alt="avatar"
+                        />
+                        <form>
+                            <input type="text" class="createPost_input" placeholder="What's on your mind?"/>
+                        </form>
+                    </div>
+                    <div class="createPost_bottom">
+                        <div class="createPost_option">
+                            <span style="color: red;" class="material-icons"> videocam </span>
+                            <h3> Live </h3>
+                        </div>
+                    </div>
+                    <div class="createPost_bottom">
+                        <div class="createPost_option">
+                            <span style="color: green;" class="material-icons"> photo_library </span>
+                            <h3> Photo </h3>
+                        </div>
+                    </div>
+                    <div class="createPost_bottom">
+                        <div class="createPost_option">
+                            <span style="color: yellow;" class="material-icons"> insert_emoticon </span>
+                            <h3> Feeling </h3>
+                        </div>
+                    </div>
+                </div>
+                <!--make post ends-->
 
-        <div class="row">
-        <div class="col-md-12 school-options-dropdown text-center">
-            <div class="dropdown btn-group">
+                <!--friends posts starts-->
+                <div class="post">
+                    <div class="post_top">
+                        <img 
+                        class="user_avatar"
+                        src="https://w7.pngwing.com/pngs/340/946/png-transparent-avatar-user-computer-icons-software-developer-avatar-child-face-heroes-thumbnail.png" 
+                        alt="avatar"
+                        />
+                        <div class="post_topInfo">
+                            <h3>John Doe</h3>
+                            <p>27 November at 20:34</p>
+                        </div>
+                    </div>
 
-            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Choose a Media Type
-                <span class="caret"></span>
-            </button>
+                    <div class="post_bottom">
+                        <p>What do you think of the new Call of Duty?</p>
+                    </div>
 
-            <ul class="dropdown-menu">
-                <li><a href="#">Photos</a></li>
-                <li><a href="videos.html">Videos</a></li>
-                <li><a href="#">Posts</a></li>
-                <li><a href="#">Tagged Photos</a></li>
-                <li><a href="#">Tagged Posts</a></li>
-            </ul>
+                    <div class="post_image">
+                        <img 
+                            src="images/vanguard.png" 
+                            alt="COD" 
+                            class="feedpic"
+                        />
+                    </div>
 
+                    <div class="post_options">
+                        <div class="post_option">
+                            <span class="material-icons"> thumb_up </span>
+                            <p>Like</p>
+                        </div>
+                        <div class="post_option">
+                            <span class="material-icons"> chat_bubble_outline </span>
+                            <p>Comment</p>
+                        </div>
+                        <div class="post_option">
+                            <span class="material-icons"> thumb_up </span>
+                            <p>Share</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="post">
+                    <div class="post_top">
+                        <img 
+                        class="user_avatar"
+                        src="https://w7.pngwing.com/pngs/340/946/png-transparent-avatar-user-computer-icons-software-developer-avatar-child-face-heroes-thumbnail.png" 
+                        alt="avatar"
+                        />
+                        <div class="post_topInfo">
+                            <h3>John Doe</h3>
+                            <p>27 November at 20:34</p>
+                        </div>
+                    </div>
+
+                    <div class="post_bottom">
+                        <p>Live on Twitch streaming the new NBA 2K!</p>
+                    </div>
+
+                    <div class="post_image">
+                        <img 
+                            src="images/2k.png" 
+                            alt="2k" 
+                            class="feedpic"
+                        />
+                    </div>
+
+                    <div class="post_options">
+                        <div class="post_option">
+                            <span class="material-icons"> thumb_up </span>
+                            <p>Like</p>
+                        </div>
+                        <div class="post_option">
+                            <span class="material-icons"> chat_bubble_outline </span>
+                            <p>Comment</p>
+                        </div>
+                        <div class="post_option">
+                            <span class="material-icons"> thumb_up </span>
+                            <p>Share</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="post">
+                    <div class="post_top">
+                        <img 
+                        class="user_avatar"
+                        src="https://w7.pngwing.com/pngs/340/946/png-transparent-avatar-user-computer-icons-software-developer-avatar-child-face-heroes-thumbnail.png" 
+                        alt="avatar"
+                        />
+                        <div class="post_topInfo">
+                            <h3>John Doe</h3>
+                            <p>27 November at 20:34</p>
+                        </div>
+                    </div>
+
+                    <div class="post_bottom">
+                        <p>New video out now on my YouTube channel. Qualifying for the race this weekend.</p>
+                    </div>
+
+                    <div class="post_image">
+                        <img 
+                            src="images/f1.png"
+                            alt="f1"
+                            class="feedpic"
+                        />
+                    </div>
+
+                    <div class="post_options">
+                        <div class="post_option">
+                            <span class="material-icons"> thumb_up </span>
+                            <p>Like</p>
+                        </div>
+                        <div class="post_option">
+                            <span class="material-icons"> chat_bubble_outline </span>
+                            <p>Comment</p>
+                        </div>
+                        <div class="post_option">
+                            <span class="material-icons"> thumb_up </span>
+                            <p>Share</p>
+                        </div>
+                    </div>
+                </div>
+                <!--friends posts ends-->
+            </div>
         </div>
-    </div>
-    </div>
-      <div class="newsfeed">
-	  <div class="item1">
-	   <h2 id="userwhoposts">
-        Optic Scump
-        </h2>
-        <p id="Date">November 27 at 8:00 PM</p>
-        <p id="caption">What do you think about the new Call Of Duty?</p>
-        <img class="feedpic" src="images/vanguard.png">
-        <div class="SocialFeature">
-        <img src="images/like.png">
-        <p> Like</p>
-        <img src="images/comment.png">
-		<p> Comment</p>
-        <img src="images/share.png">
-        <p> Share</p>
-		</div>
-		</div>
-		<div class="item2">
-        <h2 id="userwhoposts">
-        FlightReacts
-        </h2>
-        <p id="Date">November 27 at 6:43 PM</p>
-        <p id="caption">Live on Twitch streaming the new NBA 2K!</p>
-        <img class="feedpic" src="images/2k.png">
-		<div class="SocialFeature">
-        <img src="images/like.png">
-        <p> Like</p>
-        <img src="images/comment.png">
-		<p> Comment</p>
-        <img src="images/share.png">
-        <p> Share</p>
-		</div>
-		</div>
-		<div class="item3">
-        <h2 id="userwhoposts">Jarno Opmeer</h2>
-        <p id="Date">November 26 at 1:20 PM</p>
-        <p id="caption">New video out now on my YouTube channel. Qualifying for the race this weekend.</p>
-        <img class="feedpic" src="images/f1.png">
-		<div class="SocialFeature">
-        <img src="images/like.png">
-        <p> Like</p>
-        <img src="images/comment.png">
-		<p> Comment</p>
-        <img src="images/share.png">
-        <p> Share</p>
-		</div>
-      </div>
-      </div>
-	  </div>
-	  </div>
-
     </body>
 </html>
