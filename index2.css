@@ -215,6 +215,11 @@ body {
     width: 100%;
 }
 
+.post_image iframe{
+    width: 100%;
+    min-height: 100%;
+}
+
 .post_top {
     display: flex;
     position: relative;
